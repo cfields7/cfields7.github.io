@@ -37,7 +37,7 @@ main {
 #calculator {
     border: 3px black solid;
     border-radius: 10px;
-    width: 100vw;
+    width: 400vw;
     max-width: 400px;
     background-color: #4f4f4f;
     margin: 2px;
