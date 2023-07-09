@@ -32,7 +32,6 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
 }
 
 #calculator {
@@ -157,5 +156,11 @@ button:active, #sound-a:active, #sound-b:active, #sound-c:active, #sound-off:act
 ::-webkit-scrollbar-thumb {
     background: #960200;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        flex-direction: column;
+    }
 }
 
