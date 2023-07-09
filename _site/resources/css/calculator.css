@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dfa63b;
+    color: #960200;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+header img {
+    height: 80px;
+}
+
+h1,h2,h3 {
+    margin: 6px;
+}
+
+h3 {
+    font-style: italic;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#calculator {
+    border: 3px black solid;
+    border-radius: 10px;
+    width: 50vh;
+    background-color: #4f4f4f;
+    margin: 2px;
+}
+
+#calculator-input {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1vw;
+    margin: 3vh;
+}
+
+input {
+    height: 15vh;
+    font-size: 5vh;
+    border-radius: 10px;
+    text-align: right;
+    padding: 12px;
+    padding-top: 8vh;
+    grid-column: 1/6;
+    background-color: antiquewhite;
+}
+
+button {
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+
+#calculator button {
+    font: 5vh sans-serif;
+}
+
+.operator, #equals {
+    background-color: #4a58db;
+    color: antiquewhite;
+}
+
+.digit {
+    background-color: #3599e0;
+    color: antiquewhite;
+}
+
+.top-button {
+    background-color: grey;
+    color: antiquewhite;
+}
+
+button:hover {
+    filter: brightness(0.9);
+}
+
+#sound-a, #sound-b, #sound-c {
+    background-color: #5aa410;
+    color: antiquewhite
+}
+
+#sound-off {
+    background-color: #c40d07;
+    color: antiquewhite;
+}
+
+button:active, #sound-a:active, #sound-b:active, #sound-c:active, #sound-off:active, #equals:active {
+    background-color: rgb(255, 171, 60);
+}
+
+#right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#history {
+    margin: 5px 20px;
+    height: 40vh;
+    width: 40vh;
+    overflow: scroll;
+    border: 3px rgb(0, 0, 0) solid;
+    border-radius: 6px;
+    background-color: #de9a1c;
+}
+
+#history p {
+    margin: 0px;
+    padding: 5px;
+    font-family: sans-serif;
+    font-size: 14pt;
+}
+
+#history p:nth-of-type(odd) {
+    background-color: #dfa63b;
+}
+
+#history p:nth-of-type(even) {
+    background-color: #deae54;
+}
+
+#history p:hover {
+    background-color: #e9ad3ddb;
+    cursor: pointer;
+}
+
+#right-column button {
+    font-size: 3vh;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 100%;
+    padding: 20px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #960200;
+    border-radius: 10px;
+}
+
